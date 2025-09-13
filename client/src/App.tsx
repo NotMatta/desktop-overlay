@@ -1,4 +1,6 @@
 import LeftSide from "./components/sections/left-side"
+import MiddleSide from "./components/sections/middle-side"
+import RightSide from "./components/sections/right-side"
 
 const MockBackground = () => {
   return <>
@@ -8,9 +10,11 @@ const MockBackground = () => {
 }
 
 const App = () => {
-  return <div className="w-screen h-screen flex relative p-4">
+  return <div className="w-screen h-screen flex relative p-4 gap-4">
     <MockBackground />
     <LeftSide/>
+    <MiddleSide/>
+    <RightSide/>
   </div>
 }
 
