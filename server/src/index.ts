@@ -3,7 +3,7 @@ import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 3000;
-const allowedOrigins = ['http://localhost:3000', 'http://example.com'];
+const allowedOrigins = ['http://localhost:5173'];
 const corsOptions: cors.CorsOptions = {
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
